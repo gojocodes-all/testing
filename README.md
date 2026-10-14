@@ -20,7 +20,7 @@ Read the notes in roughly this order:
 7. [`git-branch`](git-notes/git-branch.md) — understand parallel lines of work.
 8. [`git-switch`](git-notes/git-switch.md) — move between branches or create one.
 9. [`git-merge`](git-notes/git-merge.md) — combine another branch into the current branch.
-10. [`git-stash`](git-notes/git-stash.md) — temporarily store unfinished changes.
+10. [`git-stash`](git-notes/git-stash.md) — temporarily store tracked changes and choose when to include untracked files.
 11. [`git-remote`](git-notes/git-remote.md) — understand named remote repositories.
 12. [`git-fetch`](git-notes/git-fetch.md) — download remote history without integrating it.
 13. [`git-pull`](git-notes/git-pull.md) — fetch and integrate remote changes.
