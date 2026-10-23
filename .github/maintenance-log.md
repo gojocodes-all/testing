@@ -1,5 +1,15 @@
 # Maintenance log
 
+## 2026-10-23 — Clarify Git diff states
+
+- **Rationale:** The `git diff` note described the command as showing pre-commit differences without explaining that plain `git diff` excludes staged changes. A learner could stage work, see an empty diff, and incorrectly assume there was nothing left to review.
+- **Files changed:** `git-notes/git-diff.md`, `README.md`, `.github/maintenance-log.md`
+- **Validation:** Verified plain, staged, `HEAD`, path-limited, `--stat`, and `--name-only` behavior in a disposable Git repository; checked the README link and practice-loop commands; ran whitespace validation on the final diff.
+- **Risk:** Low. Documentation-only; no repository history, runtime code, dependencies, configuration, or workflows are changed.
+- **Rollback:** Revert this pull request to restore the previous one-line diff note and README summary.
+
+# Maintenance log
+
 ## 2026-10-14 — Correct Git stash file-scope guidance
 
 - **Rationale:** The stash note said plain `git stash` stores uncommitted changes without explaining that untracked and ignored files are excluded. A learner could switch context expecting those files to be protected when they remain in the working tree.
