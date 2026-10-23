@@ -8,8 +8,6 @@
 - **Risk:** Low. Documentation-only; no repository history, runtime code, dependencies, configuration, or workflows are changed.
 - **Rollback:** Revert this pull request to restore the previous one-line diff note and README summary.
 
-# Maintenance log
-
 ## 2026-10-14 — Correct Git stash file-scope guidance
 
 - **Rationale:** The stash note said plain `git stash` stores uncommitted changes without explaining that untracked and ignored files are excluded. A learner could switch context expecting those files to be protected when they remain in the working tree.
