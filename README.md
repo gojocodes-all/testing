@@ -13,7 +13,7 @@ Read the notes in roughly this order:
 
 1. [`git-clone`](git-notes/git-clone.md) — copy a remote repository locally.
 2. [`git-status`](git-notes/git-status.md) — inspect changed, staged, and untracked files.
-3. [`git-add`](git-notes/git-add.md) — stage changes for a commit.
+3. [`git-add`](git-notes/git-add.md) — prepare a reviewed snapshot in the staging area.
 4. [`git-diff`](git-notes/git-diff.md) — distinguish unstaged, staged, and all changes since `HEAD`.
 5. [`git-commit`](git-notes/git-commit.md) — record a staged snapshot.
 6. [`git-log`](git-notes/git-log.md) — inspect commit history.
