@@ -1,5 +1,27 @@
 # Maintenance log
 
+## 2026-11-13 — Explain safe branch creation and switching
+
+- **Rationale:** The branch and switch notes were single-sentence summaries that
+  omitted the repository's own branch-based practice workflow. They did not
+  explain that branches are movable commit references, how to inspect or create
+  them, when deletion is safe, or why Git may refuse a switch that would
+  overwrite working-tree changes.
+- **Files changed:** `git-notes/git-branch.md` now covers branch inspection,
+  creation, naming, merged-branch review, and safe deletion;
+  `git-notes/git-switch.md` covers branch creation and switching, working-tree
+  safeguards, and a review-before-switch sequence; `README.md` reflects the
+  expanded note scope; this maintenance log records the decision.
+- **Validation:** Verified branch listing, creation, switching, merged-branch
+  listing, and safe deletion in a disposable Git repository; separately
+  confirmed that Git refuses a switch that would overwrite working-tree
+  changes; checked all referenced paths and commands; and reviewed the complete
+  diff for command safety, compatibility, accuracy, and repository scope.
+- **Risk:** Low. Documentation only; no repository history, runtime code,
+  dependencies, configuration, or workflows change.
+- **Rollback:** Revert this pull request's squash commit to restore the previous
+  one-sentence branch and switch notes and README summaries.
+
 ## 2026-10-30 — Correct Git add staging guidance
 
 - **Rationale:** The `git add` note said changes are moved into the staging area, obscuring that Git records the path's content at the moment the command runs. A learner could edit the file again and wrongly expect the newer content to be staged automatically. The note now explains the index snapshot, staged-versus-unstaged review, partial staging, and safe unstaging without discarding working changes.
