@@ -17,8 +17,8 @@ Read the notes in roughly this order:
 4. [`git-diff`](git-notes/git-diff.md) — distinguish unstaged, staged, and all changes since `HEAD`.
 5. [`git-commit`](git-notes/git-commit.md) — record a staged snapshot.
 6. [`git-log`](git-notes/git-log.md) — inspect commit history.
-7. [`git-branch`](git-notes/git-branch.md) — understand parallel lines of work.
-8. [`git-switch`](git-notes/git-switch.md) — move between branches or create one.
+7. [`git-branch`](git-notes/git-branch.md) — inspect, create, and safely delete branch references.
+8. [`git-switch`](git-notes/git-switch.md) — change branches without losing working-tree changes.
 9. [`git-merge`](git-notes/git-merge.md) — combine another branch into the current branch.
 10. [`git-stash`](git-notes/git-stash.md) — temporarily store tracked changes and choose when to include untracked files.
 11. [`git-remote`](git-notes/git-remote.md) — understand named remote repositories.
